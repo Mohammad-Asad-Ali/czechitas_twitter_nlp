@@ -124,7 +124,7 @@ print(df_tweets_all_load[2])
 print(df_tweets_all_load[3])
 print(df_tweets_all_load[4])
 
-df_tweets_all_load_joined = pd.concat([df_tweets_all_load[0], df_tweets_all_load[1],df_tweets_all_load[2],df_tweets_all_load[3],df_tweets_all_load[4]], ignore_index=True)
+df_tweets_all_load_joined = pd.concat(df_tweets_all_load, ignore_index=True)
 df_tweets_all_load_joined['tweet_ID'] = df_tweets_all_load_joined.index
 df_tweets_all_load_joined.to_csv('df_tweets_all.csv')
 # df_tweets_all_load_joined = pd.read_csv('df_tweets_all.csv')
